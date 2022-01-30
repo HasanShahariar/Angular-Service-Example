@@ -1,4 +1,7 @@
 <div class="banner-component">
+  <ul [ngStyle]="{'color':'green','font-weight':'bold'}">
+    <li *ngFor="let emp of employees">{{emp}}</li>
+  </ul>
   <h1>Create banner</h1>
-<button (click)="bannerCreate('Banner')">Update</button>
+<button [ngClass] = "isClicked ? 'btn-fab-blue' : 'btn-fab-yellow'" (click)="bannerCreate('Banner')">Update</button>
 </div>

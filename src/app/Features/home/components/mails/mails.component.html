@@ -1,4 +1,9 @@
 <div class="mail-component">
+  <ul [ngStyle]="{'color':'green','font-weight':'bold'}">
+
+    
+    <li  *ngFor="let emp of employees">{{emp}}</li>
+  </ul>
   <h1>Create mail</h1>
-  <button (click)="mailCreate('Mail')">Update</button>
+  <button [ngClass] = "isClicked ? 'btn-fab-blue' : 'btn-fab-yellow'" (click)="mailCreate('Mail')">Update</button>
 </div>

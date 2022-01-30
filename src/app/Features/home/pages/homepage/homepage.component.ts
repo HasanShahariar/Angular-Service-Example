@@ -11,6 +11,7 @@ export class HomepageComponent implements OnInit {
   constructor(private homeService:HomeService) { }
 
   ngOnInit() {}
+  
 
   createAlbum(event:any){
     this.homeService.showAlert(event)
